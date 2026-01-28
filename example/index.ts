@@ -7,7 +7,7 @@ import {
   TOPIC_AI_GRAPH_API,
 } from "../src/index.js";
 import axios from "axios";
-import config from "./config.json" assert { type: "json" };
+import config from "./config.json" with { type: "json" };
 
 console.log("开始启动");
 const client = new DWClient({

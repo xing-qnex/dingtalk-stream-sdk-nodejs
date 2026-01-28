@@ -33,7 +33,7 @@
     "./*": "./*"
   },
   "scripts": {
-    "start": "ts-node-esm example/index.ts",
+    "start": "tsx example/index.ts",
     "build": "rimraf dist && rollup -c",
     "dev": "rollup -c --watch --watch.include 'src/**' -m inline",
     "prepublishOnly": "pnpm build",
@@ -77,6 +77,7 @@
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "ts-node": "^10.9.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.9"
   }
